@@ -15,25 +15,31 @@ class Motor:
         pass
 
 def forward(left, right, speed=255):
+    print("forward")
     left.set_speed(speed)
     right.set_speed(speed)
 
 def backward(left, right, speed=255):
+    print("backward")
     left.set_speed(-speed)
     right.set_speed(-speed)
 
 def turn_left(left, right, speed=255):
+    print("turn left")
     left.set_speed(speed)
     right.set_speed(-speed)
 
 def turn_right(left, right, speed=255):
+    print("turn right")
     left.set_speed(-speed)
     right.set_speed(speed)
 
 def bread(left, right):
+    print("bread")
     left.brake()
     right.brake()
 
 def sleep(left, right, speed=0):
+    print("sleep")
     left.set_speed(speed)
     right.set_speed(speed)
