@@ -1,6 +1,6 @@
 from dora import Node
 
-from .mock_motor import forward, Motor, bread, sleep
+from mock_motor import forward, Motor, bread, sleep
 
 
 def main():
