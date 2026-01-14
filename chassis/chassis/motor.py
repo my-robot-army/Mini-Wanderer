@@ -1,8 +1,7 @@
 from periphery import PWM
 
 # 配置常量
-PWM_FREQ = 20000
-PERIOD_NS = int(1e9 / PWM_FREQ)
+PERIOD_NS = 10000
 
 class Motor:
     def __init__(self, chip, ch1, ch2):
@@ -11,7 +10,7 @@ class Motor:
         self.pwm2 = PWM(chip, ch2)
         for p in (self.pwm1, self.pwm2):
             p.period_ns = PERIOD_NS
-            p.duty_cycle_ns = 0
+            p.duty_cycle_ns = 5000
             p.enable()
 
     def set_speed(self, speed):

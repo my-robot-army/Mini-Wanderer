@@ -1,11 +1,11 @@
-"""Test module for motor package."""
+"""Test module for chassis package."""
 
 import pytest
 
 
 def test_import_main():
     """Test importing and running the main function."""
-    from motor.main import main
+    from chassis.main import main
 
     # Check that everything is working, and catch Dora RuntimeError
     # as we're not running in a Dora dataflow.

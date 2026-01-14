@@ -1,11 +1,10 @@
 from dora import Node
 
-from mock_motor import forward, Motor, bread, sleep
-
+from motor import forward, Motor, bread, sleep
 
 def main():
     left_motor = Motor(0, 0, 1)
-    right_motor = Motor(0, 2, 3)
+    right_motor = Motor(4, 2, 3)
     node = Node()
 
     print("电机驱动节点已启动，等待指令...")

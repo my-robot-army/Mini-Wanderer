@@ -4,9 +4,8 @@ nodes:
     path: logic_control/logic_control/main.py
     outputs:
       - motor_command
-
-  - id: motor
-    build: pip install -e motor
-    path: motor/motor/main.py
+  - id: chassis
+    build: pip install -e chassis
+    path: chassis/chassis/main.py
     inputs:
       motor_command: logic_control/motor_command

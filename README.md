@@ -7,6 +7,11 @@ conda create -n dora_env python=3.11
 conda activate dora_env
 ```
 
+```bash
+uv venv -p 3.11 --seed
+uv pip install -e .
+```
+
 then
 
 ```bash
@@ -24,6 +29,11 @@ or
 ```bash
 conda run -n dora_env dora build dataflow.yml
 conda run -n dora_env dora run dataflow.yml
+```
+
+```bash
+uv pip install ruff
+uv run ruff check . --fix
 ```
 
 ## Contribution Guide

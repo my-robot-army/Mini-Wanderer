@@ -1,4 +1,4 @@
-# motor
+# chassis
 
 ## Getting started
 
@@ -37,4 +37,4 @@ uv run pytest . # Test
 
 ## License
 
-motor's code are released under the MIT License
+chassis's code are released under the MIT License
